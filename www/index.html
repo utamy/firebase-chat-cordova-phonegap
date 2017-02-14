@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <!-- Mobile viewport optimized -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title>Chat</title>
+	    <!-- CSS -->
+
+	    <link rel="stylesheet" href="css/framework7.ios.css">
+	    <link rel="stylesheet" href="css/framework7.ios.colors.css">
+	    <link rel="stylesheet" href="css/framework7-icons.css">
+	    <link rel="stylesheet" href="css/kitchen-sink.css">
+	    
+	</head>
+
+	<body>
+	    <div class="panel-overlay"></div>
+	    <div class="panel panel-right panel-reveal layout-dark">
+	        <div class="list-block media-list">
+	            <div class="toolbar">
+	                <div class="toolbar-inner">
+	                    <p>Who is online?</p>
+	                </div>
+	            </div>
+	            <div class="list-block media-list">
+	                <ul class="users-list">
+
+	                </ul>
+	            </div>
+	            <div class="toolbar toolbar-bottom">
+	                <div class="toolbar-inner" id="main">
+	                    <a href="#" id="logout" class="button button-fill color-green close-panel">Logout</a>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="views">
+	        <div class="view view-main">
+	            <div class="navbar">
+	                <div class="navbar-inner">
+	                    <div class="center">Welcome</div>
+	                </div>
+	            </div>
+	            <div class="pages navbar-through toolbar-fixed">
+	                <div data-page="index" class="page">
+	                    <div class="page-content login-screen-content" id="login">
+	                        <div class="content-block">
+	                            <img src="img/mountoya.png" width="50%">
+	                        </div>
+	                        <form>
+	                            <div class="list-block">
+	                                <ul>
+	                                    <li class="item-content">
+	                                        <div class="item-inner">
+	                                            <div class="item-title label">Username</div>
+	                                            <div class="item-input">
+	                                                <input type="text" id="username" placeholder="Username" required>
+	                                            </div>
+	                                        </div>
+	                                    </li>
+	                                    <li class="item-content">
+	                                        <div class="item-inner">
+	                                            <div class="item-title label">Password</div>
+	                                            <div class="item-input">
+	                                                <input type="password" id="password" placeholder="Password" required>
+	                                                <input type="hidden" id="avatar" placeholder="http://img.com/anu.jpg" value="https://pbs.twimg.com/profile_images/3753946170/49cc5ac5262be21e3cfd129e4a3b3bcc_400x400.jpeg" required>
+	                                            </div>
+	                                        </div>
+	                                    </li>
+	                                        
+	                                </ul>
+	                            </div>
+	                            <div class="list-block">
+	                                <ul>
+	                                    <li><a href="#" class="item-link list-button" id="loginbtn">Sign In</a></li>
+	                                </ul>
+	                                <ul>
+	                                <li><p class="content-block">Not registered yet? </p><a href="register.html" class="item-link list-button">Register</a></li>
+	                             	</ul>
+	                            </div>
+	                        </form>
+	                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	    <!-- JS -->
+	    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+		
+		<script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
+		
+	    <script type="text/javascript" src="js/config.js"></script>
+	    <script type="text/javascript" src="js/chat_realtime.js"></script>
+	    <script type="text/javascript" src="js/framework7.min.js"></script>
+	    <script type="text/javascript" src="js/kitchen-sink.js"></script>
+	    <script type="text/javascript" src="cordova.js"></script>
+	</body>
+
+</html>

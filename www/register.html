@@ -1,0 +1,80 @@
+<div class="pages">
+    <div data-page="register" class="page navbar-fixed toolbar-fixed">
+        <div class="navbar no-border">
+            <div class="navbar-inner">
+                <div class="left sliding"><a href="#" class="back link"><i class="icon icon-back"></i><span>Kembali</span></a></div>
+                <div class="center sliding">Register</div>
+            </div>
+        </div>
+        <div class="page-content login-screen-content">
+            <form id="test" onsubmit="return validasi()">
+                <div class="list-block inputs-list">
+                    <ul>
+                        <li class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title label">Nama</div>
+                                <div class="item-input item-input-field">
+                                    <input type="text" required id="nama_lengkap" name="nama_lengkap" placeholder="Full Name" />
+                                </div>
+                            </div>
+                        </li>
+                       
+                        <li>
+					      <!-- Additional "smart-select" class -->
+					      <a href="#" class="item-link smart-select">
+					        <!-- select -->
+					        <select name="department" id="department" required>
+					          <option value="" selected>Pilih</option>
+					          <option value="IT">IT</option>
+					          ...
+					        </select>
+					        <div class="item-content">
+					          <div class="item-inner">
+					            <!-- Select label -->
+					            <div class="item-title">Department</div>
+					            <!-- Selected value, not required -->
+					            <div class="item-after">Pilih</div>
+					          </div>
+					        </div>
+					      </a>
+					    </li>
+                         <li class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title label">Username</div>
+                                <div class="item-input item-input-field">
+                                    <input type="text" required id="name" name="name" placeholder="Username" />
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title label">Email</div>
+                                <div class="item-input item-input-field validasi">
+                                    <input type="email" required id="email" name="email" placeholder="E-mail"/>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title label">Password</div>
+                                <div class="item-input item-input-field">
+                                    <input type="text" required id="password1" name="password" placeholder="Password" />
+                                     <input type="hidden" id="avatar" name="avatar" value="https://pbs.twimg.com/profile_images/3753946170/49cc5ac5262be21e3cfd129e4a3b3bcc_400x400.jpeg"/>
+                                     <input type="hidden" id="login1" name="login" value=" "/>
+                                     <input type="hidden" id="status" name="status" value="offline"/>
+                                </div>
+                            </div>
+                        </li>
+	                    <div class="toolbar">
+    						<div class="toolbar-inner">
+	                    <a href="#"></a>
+	                    <a href="#" class="link" id="signupbtn">Register</a>
+	                    <a href="#"></a>
+	                    </div>
+	                    </div>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

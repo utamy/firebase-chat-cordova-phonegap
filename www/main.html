@@ -1,0 +1,46 @@
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left">
+			<img id="avatarlogin" src="" width="25px" />
+			<span id="userlogin"></span>
+		</div>
+		<div class="center">Chat</div>
+		<div class="right">
+			<a href="#" class="link open-panel icon-only">
+				<i class="icon icon-bars"></i>
+			</a>
+		</div>
+		<div class="subnavbar sliding">
+			<div class="buttons-row">
+				<a href="#rooms" class="button active tab-link">Rooms  <span id="indikator-rooms" class="badge bg-green notif">0</span></a>
+				<a href="#users" class="button tab-link">Users  <span id="indikator-users" class="badge bg-green notif">0</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="pages navbar-through toolbar-fixed">
+	<div data-page="chat" class="page">
+		<div class="toolbar messagebar">
+			<div class="toolbar-inner">
+				<a id="gambar" class="link icon-only">
+					<i class="icon icon-camera"></i>
+				</a>
+				<textarea placeholder="Message"></textarea>
+				<a href="#" class="link send-message">Send</a>
+			</div>
+		</div>
+		<div class="tabs-swipeable-wrap with-subnavbar">
+			<div class="tabs">
+				<div id="rooms" class="page-content tab active messages-content">
+					<div class="messages messages-auto-layout">
+					</div>
+				</div>
+				<div id="users" class="tab page-content messages-content">
+					<div class="messages messages-auto-layout">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
